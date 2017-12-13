@@ -7,3 +7,7 @@ set number relativenumber
 " color theme
 colorscheme gruvbox
 set background=dark
+
+" ctags optimization
+set autochdir
+set tags=tags;
