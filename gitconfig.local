@@ -1,0 +1,5 @@
+[credential]
+  helper = cache
+[user]
+	email = luiz.bazon@hotmail.com
+	name = Luiz Assunção
