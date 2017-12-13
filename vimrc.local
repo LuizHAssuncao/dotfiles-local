@@ -1,0 +1,5 @@
+" show hybrid number
+set number relativenumber
+
+" hide vertical red line
+set colorcolumn=0
