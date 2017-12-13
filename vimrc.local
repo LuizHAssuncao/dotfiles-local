@@ -11,3 +11,9 @@ set background=dark
 " ctags optimization
 set autochdir
 set tags=tags;
+
+" ctags - jump to where tags are defined
+nnoremap <leader>. :CtrlPTag<cr>
+
+" ctags - TagbarToggle (see tag structure of the file)
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
