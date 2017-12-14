@@ -1,33 +1,53 @@
-set hlsearch
+" ==================== General Config ==================== 
 
-" show hybrid number
-set number relativenumber
+set hlsearch
+set number relativenumber           " show hybrid number
+set history=1000                    " store lots of :cmdline history
+set autoread                        " reload files changes outside vim
+set ignorecase                      " ignore case when searching...
+set smartcase                       " ...unless we type a capital
+set visualbell                      " no sounds
+
+" ==================== Color Theme  ==================== 
+
+colorscheme gruvbox
+set background=dark
 
 " hide vertical red line
 " set colorcolumn=0
 
-" color theme
-colorscheme gruvbox
-set background=dark
+" ==================== Folds ==================== 
 
-" ctags optimization
+set foldmethod=indent   "fold based on indent
+set foldnestmax=3       "deepest fold is 3 levels
+set nofoldenable        "dont fold by default
+
+" ==================== Scrolling ==================== 
+
+set scrolloff=8         "Start scrolling when we're 8 lines away from margins
+set sidescrolloff=15
+set sidescroll=1
+
+" ==================== Ctags  ==================== 
+
 set autochdir
 set tags=tags;
 
-" ctags - jump to where tags are defined
+" jump to where tags are defined
 nnoremap <leader>. :CtrlPTag<cr>
 
-" ctags - TagbarToggle (see tag structure of the file)
+" TagbarToggle (see tag structure of the file)
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
-" NERDTree
+" ==================== NERDTree  ==================== 
+
 map <C-n> :NERDTreeToggle<CR>
 map <leader>rr :NERDTreeFind<cr>
 
-" NERDTree - open automatically when vim starts up if no files were specified
+" open automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" NERDTree - close vim if the only window left open is a NERDTree
+" close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
