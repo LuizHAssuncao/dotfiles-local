@@ -7,6 +7,10 @@ set autoread                        " reload files changes outside vim
 set ignorecase                      " ignore case when searching...
 set smartcase                       " ...unless we type a capital
 set visualbell                      " no sounds
+map <Leader>h :noh<cr>
+ino jj <esc>
+cno jj <c-c>
+vno v <esc>
 
 " ==================== Color Theme  ==================== 
 
@@ -27,6 +31,13 @@ set nofoldenable        "dont fold by default
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+" ==================== Vim-Test ==================== 
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
 
 " ==================== Ctags  ==================== 
 
