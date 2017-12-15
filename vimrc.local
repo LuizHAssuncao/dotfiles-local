@@ -7,10 +7,16 @@ set autoread                        " reload files changes outside vim
 set ignorecase                      " ignore case when searching...
 set smartcase                       " ...unless we type a capital
 set visualbell                      " no sounds
+set clipboard=unnamed               " Every copy and paste will interact with system cliboard.
 map <Leader>h :noh<cr>
 ino jj <esc>
 cno jj <c-c>
 vno v <esc>
+nnoremap <Leader>w :w!<CR>
+nnoremap <Leader>wq :wq!<CR>
+map <Leader>ss :%s/
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/dist/*,*/vendor/*,.git
+set cursorline
 
 " ==================== Color Theme  ==================== 
 
@@ -42,13 +48,13 @@ nmap <silent> t<C-g> :TestVisit<CR>
 " ==================== Ctags  ==================== 
 
 set autochdir
-set tags=tags;
+set tags=./tags;,tags;
 
 " jump to where tags are defined
 nnoremap <leader>. :CtrlPTag<cr>
 
 " TagbarToggle (see tag structure of the file)
-nnoremap <silent> <Leader>b :TagbarToggle<CR>
+" nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
 " ==================== NERDTree  ==================== 
 
