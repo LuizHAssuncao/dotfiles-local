@@ -18,10 +18,9 @@ map <Leader>ss :%s/
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/dist/*,*/vendor/*,.git
 set cursorline
 
-" ==================== Color Theme  ==================== 
+" ==================== Color Theme  ====================" "
 
-colorscheme gruvbox
-set background=dark
+colorscheme meta5
 
 " hide vertical red line
 " set colorcolumn=0
@@ -107,3 +106,4 @@ map <leader>b :Buffers<cr>
 map <leader>f :Files<cr>
 map <leader>gf :GFiles<cr>
 map <leader>tag :Tags<cr>
+map <leader>rg :Rg<cr>

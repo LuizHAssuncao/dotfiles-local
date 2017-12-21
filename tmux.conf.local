@@ -1,0 +1,41 @@
+# improve split
+bind x split-window -v -c '#{pane_current_path}'
+bind v split-window -h -c '#{pane_current_path}'
+# bind c command-prompt -p "window name:" "new-window -c '#{pane_current_path}';
+# rename-window '%%'"
+
+# resizing
+bind -n S-Left resize-pane -L 2
+bind -n S-Right resize-pane -R 2
+bind -n S-Down resize-pane -D 1
+bind -n S-Up resize-pane -U 1
+bind -n C-Left resize-pane -L 10
+bind -n C-Right resize-pane -R 10
+bind -n C-Down resize-pane -D 5
+bind -n C-Up resize-pane -U 5
+
+# reload tmux
+bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
+
+# choose tree (sessions)
+bind-key C-j choose-tree
+
+# open a new tmux session without leaving tmux
+bind-key C-b send-keys 'tat && exit' 'C-m'
+
+# kill a session without leaving tmux
+# bind-key K run-shell 'tmux switch-client -n \; kill-session -t "$(tmux
+# display-message -p "#S")" || tmux kill-session'
+
+# differentiate current panel
+# set -g window-active-style 'bg=colour232'
+# set -g window-style 'bg=colour234'
+
+source "/usr/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+run '~/.tmux/plugins/tpm/tpm'
