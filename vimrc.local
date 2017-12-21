@@ -14,6 +14,8 @@ cno jj <c-c>
 vno v <esc>
 nnoremap <Leader>w :w!<CR>
 nnoremap <Leader>wq :wq!<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>qq :q!<CR>
 map <Leader>ss :%s/
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/dist/*,*/vendor/*,.git
 set cursorline
