@@ -22,8 +22,6 @@ set cursorline
 
 " ==================== Color Theme  ====================" "
 
-colorscheme meta5
-
 " hide vertical red line
 " set colorcolumn=0
 
