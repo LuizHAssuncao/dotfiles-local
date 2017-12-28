@@ -19,6 +19,7 @@ nnoremap <Leader>qq :q!<CR>
 map <Leader>ss :%s/
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/dist/*,*/vendor/*,.git
 set cursorline
+set textwidth=120
 
 " ==================== Color Theme  ====================" "
 
@@ -36,13 +37,6 @@ set nofoldenable        "dont fold by default
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
-
-" ==================== Vim-Test ==================== 
-nmap <silent> t<C-n> :TestNearest<CR>
-nmap <silent> t<C-f> :TestFile<CR>
-nmap <silent> t<C-s> :TestSuite<CR>
-nmap <silent> t<C-l> :TestLast<CR>
-nmap <silent> t<C-g> :TestVisit<CR>
 
 " ==================== Ctags  ==================== 
 
