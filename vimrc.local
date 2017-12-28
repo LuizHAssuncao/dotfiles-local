@@ -22,7 +22,7 @@ set cursorline
 set textwidth=120
 
 " ==================== Color Theme  ====================" "
-
+colorscheme railscasts
 " hide vertical red line
 " set colorcolumn=0
 
