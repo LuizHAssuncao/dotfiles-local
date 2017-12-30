@@ -36,6 +36,7 @@ bind-key C-b send-keys 'tat && exit' 'C-m'
 # set -g window-style 'bg=colour234'
 
 source "/usr/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
+source "/Users/luizassuncao/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf"
 
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
