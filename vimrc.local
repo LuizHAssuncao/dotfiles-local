@@ -20,8 +20,9 @@ map <Leader>ss :%s/
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/dist/*,*/vendor/*,.git
 set cursorline
 set textwidth=120
+set pastetoggle=<F2>
 
-" ==================== Color Theme  ====================" "
+" ==================== Color Theme  ====================" 
 colorscheme railscasts
 " hide vertical red line
 " set colorcolumn=0
