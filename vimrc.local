@@ -102,3 +102,8 @@ map <leader>f :Files<cr>
 map <leader>gf :GFiles<cr>
 map <leader>tag :Tags<cr>
 map <leader>rg :Rg<cr>
+
+" ==================== Shortcuts ==================== 
+let g:move_key_modifier = 'C'
+map go :Google<cr>
+
