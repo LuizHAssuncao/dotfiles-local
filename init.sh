@@ -47,3 +47,5 @@ mkdir -p ~/.vim/pythonx
 ln ~/dotfiles/vim/pythonx/snippet_helpers.py ~/.vim/pythonx/snippet_helpers.py
 cd ~/dotfiles/
 
+#zsh plugins
+
