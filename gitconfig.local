@@ -1,7 +1,8 @@
 [credential]
   helper = cache
 [user]
-	email = luiz.bazon@hotmail.com
-	name = Luiz Assunção
+  email = luiz.bazon@hotmail.com
+  name = Luiz Assunção
+  username = LuizHAssuncao
 [core]
   pager = "diff-so-fancy | less --tabs=4 -RFX"
