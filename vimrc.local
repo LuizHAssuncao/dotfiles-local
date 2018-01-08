@@ -12,7 +12,7 @@ map <Leader>h :noh<cr>
 ino jj <esc>
 cno jj <c-c>
 vno v <esc>
-nnoremap <Leader>w :w!<CR>
+nnoremap <Leader>ww :w!<CR>
 nnoremap <Leader>wq :wq!<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>qq :q!<CR>
