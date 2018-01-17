@@ -106,3 +106,7 @@ map <leader>rg :Rg<cr>
 let g:move_key_modifier = 'C'
 map go :Google<cr>
 
+" ==================== highlightedyank ==================== 
+if !exists('##TextYankPost')
+  map y <Plug>(highlightedyank)
+endif
