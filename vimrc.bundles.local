@@ -13,4 +13,4 @@ Plug 'jpo/vim-railscasts-theme'
 Plug 'matze/vim-move'
 Plug 'szw/vim-g'
 Plug 'google/vim-searchindex'
-
+Plug 'wakatime/vim-wakatime'
