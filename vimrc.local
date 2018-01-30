@@ -7,7 +7,6 @@ set autoread                        " reload files changes outside vim
 set ignorecase                      " ignore case when searching...
 set smartcase                       " ...unless we type a capital
 set visualbell                      " no sounds
-set clipboard=unnamed               " Every copy and paste will interact with system cliboard.
 map <Leader>h :noh<cr>
 ino jj <esc>
 cno jj <c-c>
