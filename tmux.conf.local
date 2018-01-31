@@ -1,6 +1,16 @@
 unbind C-b
 set -g prefix C-s
+set -g prefix2 C-s
+bind-key C-s send-prefix -2
 bind C-s send-prefix
+
+# act like vim
+bind -n C-h run "(tmux display-message -p '#{pane_title}' | grep -iq vim && tmux send-keys C-h) || tmux select-pane -L"
+bind -n C-j run "(tmux display-message -p '#{pane_title}' | grep -iq vim && tmux send-keys C-j) || tmux select-pane -D"
+bind -n C-k run "(tmux display-message -p '#{pane_title}' | grep -iq vim && tmux send-keys C-k) || tmux select-pane -U"
+bind -n C-l run "(tmux display-message -p '#{pane_title}' | grep -iq vim && tmux send-keys C-l) || tmux select-pane -R"
+bind-key -r c-h select-window -t :-
+bind-key -r c-l select-window -t :+
 
 # improve split
 bind x split-window -v -c '#{pane_current_path}'
@@ -32,8 +42,8 @@ bind-key C-b send-keys 'tat && exit' 'C-m'
 # display-message -p "#S")" || tmux kill-session'
 
 # differentiate current panel
-# set -g window-active-style 'bg=colour232'
-# set -g window-style 'bg=colour234'
+set -g window-active-style 'bg=colour232'
+set -g window-style 'bg=colour234'
 
 source "/usr/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf"
 source "/Users/luizassuncao/Library/Python/2.7/lib/python/site-packages/powerline/bindings/tmux/powerline.conf"
