@@ -131,3 +131,7 @@ if exists('$TMUX')
   nnoremap <silent> <C-k> :call TmuxOrSplitSwitch('k', 'U')<cr>
   nnoremap <silent> <C-l> :call TmuxOrSplitSwitch('l', 'R')<cr>
 endif
+
+" ==================== vim-projectionist ===================
+" change from test to production code and vice-versa using projectionist
+nnoremap <leader><leader> :A<CR>
