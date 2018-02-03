@@ -119,3 +119,5 @@ prompt pure
 #RVM
 source ~/.rvm/scripts/rvm
 
+#zshrc.machine
+source ~/.zshrc.machine
