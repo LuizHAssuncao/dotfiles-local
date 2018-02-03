@@ -20,6 +20,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*
 set cursorline
 set textwidth=120
 set pastetoggle=<F2>
+set shell=/usr/local/bin/zsh
 
 " ==================== Color Theme  ====================" 
 colorscheme railscasts
@@ -41,9 +42,6 @@ set sidescroll=1
 
 set autochdir
 set tags=./tags;,tags;
-
-" jump to where tags are defined
-nnoremap <leader>. :CtrlPTag<cr>
 
 " TagbarToggle (see tag structure of the file)
 " nnoremap <silent> <Leader>b :TagbarToggle<CR>
@@ -100,13 +98,12 @@ map <leader>b :Buffers<cr>
 map <leader>f :Files<cr>
 map <leader>gf :GFiles<cr>
 map <leader>tag :Tags<cr>
-map <leader>rg :Rg<cr>
 
-" ==================== Shortcuts ==================== 
+" ==================== Shortcuts ====================
 let g:move_key_modifier = 'C'
 map go :Google<cr>
 
-" ==================== highlightedyank ==================== 
+" ==================== highlightedyank ====================
 if !exists('##TextYankPost')
   map y <Plug>(highlightedyank)
 endif
@@ -135,3 +132,7 @@ endif
 " ==================== vim-projectionist ===================
 " change from test to production code and vice-versa using projectionist
 nnoremap <leader><leader> :A<CR>
+
+" ==================== vim-test ====================
+let test#strategy = "dispatch"
+
