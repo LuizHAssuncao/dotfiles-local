@@ -18,7 +18,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*
 set cursorline
 set textwidth=120
 set pastetoggle=<F2>
-set shell=/usr/local/bin/zsh
 
 " ==================== Color Theme  ====================" 
 colorscheme railscasts
@@ -99,7 +98,6 @@ map <leader>tag :Tags<cr>
 
 " ==================== Shortcuts ====================
 let g:move_key_modifier = 'C'
-map go :Google<cr>
 
 " ==================== highlightedyank ====================
 if !exists('##TextYankPost')
