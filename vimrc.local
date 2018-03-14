@@ -14,7 +14,7 @@ vno v <esc>
 nnoremap <Leader>w :w!<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>qq :q!<CR>
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/dist/*,*/vendor/*,.git
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/dist/*,*/vendor/*,.git,*/log/*
 set cursorline
 set textwidth=120
 set pastetoggle=<F2>
