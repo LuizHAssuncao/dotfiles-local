@@ -1,4 +1,4 @@
-" ==================== General Config ==================== 
+" ==================== General Config ====================
 
 set hlsearch
 set number relativenumber           " show hybrid number
@@ -19,23 +19,23 @@ set cursorline
 set textwidth=120
 set pastetoggle=<F2>
 
-" ==================== Color Theme  ====================" 
+" ==================== Color Theme  ===================="
 colorscheme railscasts
 " hide vertical red line
 " set colorcolumn=0
 
-" ==================== Folds ==================== 
+" ==================== Folds ====================
 
 set foldmethod=indent   "fold based on indent
 set nofoldenable        "dont fold by default
 
-" ==================== Scrolling ==================== 
+" ==================== Scrolling ====================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
-" ==================== Ctags  ==================== 
+" ==================== Ctags  ====================
 
 set autochdir
 set tags=./tags;,tags;
@@ -43,12 +43,12 @@ set tags=./tags;,tags;
 " TagbarToggle (see tag structure of the file)
 " nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
-" ==================== NERDTree  ==================== 
+" ==================== NERDTree  ====================
 
 map <C-n> :NERDTreeToggle<CR>
 map <leader>rr :NERDTreeFind<cr>
 
-" ==================== FZF (ripgrep) ==================== 
+" ==================== FZF (ripgrep) ====================
 " Similarly, we can apply it to fzf#vim#grep. To use ripgrep instead of ag:
 " command! -bang -nargs=* Rg
 "   \ call fzf#vim#grep(
@@ -102,7 +102,7 @@ if !exists('##TextYankPost')
   map y <Plug>(highlightedyank)
 endif
 
-" ==================== tmux (move between panes)  ==================== 
+" ==================== tmux (move between panes)  ====================
 if exists('$TMUX')
   function! TmuxOrSplitSwitch(wincmd, tmuxdir)
     let previous_winnr = winnr()
