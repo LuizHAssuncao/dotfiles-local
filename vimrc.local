@@ -129,3 +129,14 @@ nnoremap <leader><leader> :A<CR>
 
 " ==================== vim-test ====================
 let test#strategy = "dispatch"
+
+" ==================== System Clipboard ====================
+nnoremap <Leader>y "+y
+nnoremap <Leader>d "+d
+vnoremap <Leader>y "+y
+vnoremap <Leader>d "+d
+
+nnoremap <Leader>p :set paste<CR>"+p:set nopaste<CR>
+nnoremap <Leader>P :set paste<CR>"+P:set nopaste<CR>
+vnoremap <Leader>p :set paste<CR>"+p:set nopaste<CR>
+vnoremap <Leader>P :set paste<CR>"+P:set nopaste<CR>
