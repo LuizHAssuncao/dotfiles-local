@@ -101,7 +101,6 @@ alias s='sudo'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
 export PATH="$PATH:$HOME/.local/bin"
 
 $HOME/.asdf/asdf.sh
@@ -128,5 +127,7 @@ source ~/.zshrc.machine
 # export LANG=en_US.UTF-8
 # export LC_ALL=en_US.UTF-8
 
-alias vim="/usr/local/bin/vim"
-
+export XDG_CONFIG_HOME=$HOME/.config
+ln -s ~/.vim $XDG_CONFIG_HOME/nvim
+ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
+ln -s ~/.vim .nvim
