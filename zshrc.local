@@ -123,7 +123,7 @@ source ~/.rvm/scripts/rvm
 #zshrc.machine
 source ~/.zshrc.machine
 
-# PATH=~/Library/Python/2.7/bin:$PATH
+export PATH=~/Library/Python/2.7/bin:$PATH
 # export LANG=en_US.UTF-8
 # export LC_ALL=en_US.UTF-8
 
