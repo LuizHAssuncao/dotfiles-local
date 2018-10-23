@@ -140,3 +140,6 @@ nnoremap <Leader>p :set paste<CR>"+p:set nopaste<CR>
 nnoremap <Leader>P :set paste<CR>"+P:set nopaste<CR>
 vnoremap <Leader>p :set paste<CR>"+p:set nopaste<CR>
 vnoremap <Leader>P :set paste<CR>"+P:set nopaste<CR>
+
+let g:airline_highlighting_cache=1
+set regexpengine=1
