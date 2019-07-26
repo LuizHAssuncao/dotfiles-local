@@ -143,3 +143,6 @@ vnoremap <Leader>P :set paste<CR>"+P:set nopaste<CR>
 
 let g:airline_highlighting_cache=1
 set regexpengine=1
+
+" Only run linters named in ale_linters settings.
+let g:ale_linters_explicit = 1
