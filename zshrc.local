@@ -7,7 +7,7 @@ export ZSH=~/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="agnoster"
+ZSH_THEME="agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -113,21 +113,9 @@ $HOME/.asdf/completions/asdf.bash
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 
-# Pure theme
-autoload -U promptinit; promptinit;
-prompt pure
-
-#RVM
-source ~/.rvm/scripts/rvm
-
 #zshrc.machine
 source ~/.zshrc.machine
 
 export PATH=~/Library/Python/2.7/bin:$PATH
 # export LANG=en_US.UTF-8
 # export LC_ALL=en_US.UTF-8
-
-export XDG_CONFIG_HOME=$HOME/.config
-ln -s ~/.vim $XDG_CONFIG_HOME/nvim
-ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
-ln -s ~/.vim .nvim
