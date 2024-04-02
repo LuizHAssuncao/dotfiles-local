@@ -103,8 +103,8 @@ alias s='sudo'
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
-$HOME/.asdf/asdf.sh
-$HOME/.asdf/completions/asdf.bash
+#$HOME/.asdf/asdf.sh
+#$HOME/.asdf/completions/asdf.bash
 
 # --files: List files that would be searched but do not search
 # --no-ignore: Do not respect .gitignore, etc...
